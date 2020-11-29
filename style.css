@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+
+.clock img{
+    height: 90vh;
+}
+
+.clock-long-needle{
+    z-index: 10;
+    /* height: 90vh; */
+    position: absolute;
+    top: 5%;
+    /* border: 1px solid ; */
+    transform: rotateY(180deg);
+}
+
+.clock-small-needle{
+    z-index: 10;
+    position: absolute;
+    top: 5%;
+    /* border: 1    px solid ; */
+}
+.clock-second-needle{
+    z-index: 10;
+    position: absolute;
+    top: 5%;
+    /* border: 1    px solid ; */
+}
+
+@media screen and (max-width: 425px){
+    .clock img{
+        height: 50vh;
+    }
+    .clock-long-needle,.clock-second-needle,.clock-small-needle{
+        top: 23%;
+    }
+}
